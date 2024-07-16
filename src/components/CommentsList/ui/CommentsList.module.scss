@@ -1,0 +1,34 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 10px 10px;
+
+  @media (max-width: 643px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    .item {
+      text-align: center;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.item {
+  height: 200px;
+}
+
+.message {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Количество строк до обрезания */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avatar {
+  width: 60px;
+}

@@ -1,0 +1,23 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 10px 0;
+
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.item {
+  text-align: center;
+  color: var(--inverted-primary-color);
+
+  img {
+    width: 90px;
+  }
+}

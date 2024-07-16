@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+  padding: 0 10px;
+}
+
+.switchers {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  gap: 12px;
+  color: var(--inverted-primary-color);
+
+  a {
+    color: inherit;
+  }
+}
+
+.themeSwitcher {
+  display: flex;
+  align-items: center;
+}
+
+.langSwitcher {
+  display: flex;
+  gap: 7px;
+}
+
+.btn {
+  &:hover {
+    background-color: transparent !important;
+  }
+}
